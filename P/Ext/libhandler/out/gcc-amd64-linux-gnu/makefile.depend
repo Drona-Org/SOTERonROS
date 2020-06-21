@@ -1,0 +1,34 @@
+out/gcc-amd64-linux-gnu/$(VARIANT)/exception.o: src/exception.c inc/libhandler.h inc/libhandler-internal.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/libhandler.o: src/libhandler.c inc/libhandler.h inc/libhandler-internal.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/main-perf.o: test/main-perf.c inc/libhandler.h test/perf.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/main-tests.o: test/main-tests.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/perf-counter.o: test/perf-counter.c inc/libhandler.h test/perf.h \
+ test/tests.h out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/perf.o: test/perf.c inc/libhandler.h test/perf.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-amb.o: test/test-amb.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-dynamic.o: test/test-dynamic.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-excn.o: test/test-excn.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-exn.o: test/test-exn.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-general.o: test/test-general.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-raise.o: test/test-raise.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-state-alloc.o: test/test-state-alloc.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-state.o: test/test-state.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-tailops.o: test/test-tailops.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/test-yieldn.o: test/test-yieldn.c inc/libhandler.h test/tests.h \
+ out/gcc-amd64-linux-gnu/cenv.h
+out/gcc-amd64-linux-gnu/$(VARIANT)/tests.o: test/tests.c test/tests.h out/gcc-amd64-linux-gnu/cenv.h \
+ inc/libhandler.h
