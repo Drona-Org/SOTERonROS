@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/sumukh/catkin_ws/src/Drona/P/Bld/Drops/Prt/lib/libPrt_static.a  CMakeFiles/Prt.dir/Core/PrtExecution.c.o CMakeFiles/Prt.dir/Core/PrtTypes.c.o CMakeFiles/Prt.dir/Core/PrtValues.c.o CMakeFiles/Prt.dir/LinuxUser/PrtLinuxUserConfig.c.o
+/usr/bin/ranlib /home/sumukh/catkin_ws/src/Drona/P/Bld/Drops/Prt/lib/libPrt_static.a
