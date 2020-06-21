@@ -1,8 +1,8 @@
 # SOTER on ROS
 
 ## Table of Contents
-1. [ Setup. ](#Setup)
-2. [ Case Studies. ](#examples)
+1. [ Setup ](#Setup)
+2. [ Case Studies ](#examples)
 
 <a name="Setup"></a>
 ## Setup
@@ -40,4 +40,4 @@
 <a name="examples"></a>
 ## Case Studies
 
-Videos of case studies can be found at [label](https://drona-org.github.io/Drona/)
+Videos of case studies can be found at [https://drona-org.github.io/Drona/.](https://drona-org.github.io/Drona/)
