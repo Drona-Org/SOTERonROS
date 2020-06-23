@@ -14,37 +14,40 @@ The implementation of the software stack, examples of task planners, and interfa
 <a name="Setup"></a>
 ## Setup
 - Install ROS and create a catkin workspace for your ROS packages: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
-- Install OMPL for our case studies: https://ompl.kavrakilab.org/installation.html
-- Install the SJTU Drone package for our case study: https://github.com/tahsinkose/sjtu-drone
-- Clone the `multi_robot` ROS package into the `src` directory of your `catkin_ws`. 
-    - `cd ~/catkin_ws/src`
-    - `git clone git@github.com:sumukhshiv/multi_robot.git`
-- Clone this repo `src` directory
     - `git clone git@github.com:Drona-Org/SOTERonROS.git`
-- To run the Drone Surveillance Sample run the following commands:
+- Install P: https://github.com/p-org/P
+- To run a SOTER on ROS application run the following commands:
     - Launch roscore in a new terminal window: 
     ```
         roscore
     ```
-    - Launch the simulator in a new terminal window:
+    - Launch your simulator in a new terminal window:
     ``` 
         cd ~/catkin_ws
         catkin_make
         . devel/setup.sh
-        roslaunch multi_robot drone.launch (changes for your specific simulation)
+        roslaunch <simulation package> <simulator launch file>
     ```
     - Compile the P source code in a new terminal window:
     ``` 
         cd ~/catkin_ws/src/SOTERonROS/PSrc/SoftwareStack/
-        pc ../Applications/DroneExploration/MainDroneTaskPlanner.p RTAMotionPlanner.p RTAPlanExecutor.p RTADecisionModuleDrone.p Robot.p -outputDir:../Applications/DroneExploration
+        pc ../Applications/<TaskPlanner.p> <Robot.p> <MotionPlanner.p> <PlanExecutor.p>  <Decision Module.p> -outputDir:../application/path
     ```
     - Execute your application in a new terminal window:
     ``` 
         cd ~/catkin_ws
         catkin_make
         . devel/setup.sh
-        rosrun SOTERonROS soter_test (changes for your specific application)
+        rosrun SOTERonROS <application_executable>
     ```
+- Example:
+    - In the Drone Surveillance Case Study, we use the following packages:
+        - OMPL: https://ompl.kavrakilab.org/installation.html
+        - SJTU Drone: https://github.com/tahsinkose/sjtu-drone
+        - `multi_robot` ROS/Gazebo simulation: https://github.com/sumukhshiv/multi_robot
+    - Launching Simulator: `roslaunch multi_robot drone.launch`
+    - Compiling P Code: `pc ../Applications/DroneExploration/MainDroneTaskPlanner.p RTAMotionPlanner.p RTAPlanExecutor.p RTADecisionModuleDrone.p Robot.p -outputDir:../Applications/DroneExploration`
+    - Execuring application: `rosrun SOTERonROS soter_test`
 
 <a name="examples"></a>
 ## Case Studies
