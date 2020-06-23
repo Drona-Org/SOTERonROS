@@ -10,6 +10,7 @@ The implementation of the software stack, examples of task planners, and interfa
 ## Table of Contents
 1. [ Setup ](#Setup)
 2. [ Case Studies ](#examples)
+3. [ Virtual Machine ](#vm)
 
 <a name="Setup"></a>
 ## Setup
@@ -72,3 +73,7 @@ In these videos, we implement SOTER on top of the Robot Operating System (ROS) a
 
 ### Robot Delivery Case Study - Composing Monitors
 [![Robot Delivery Case Study - Composing Monitors](https://img.youtube.com/vi/j_0WC9fo6W4/0.jpg)](https://youtu.be/j_0WC9fo6W4?list=PLaL5L3Z-dA6KVlPkXRb-4-TfNMPWumeUA)
+
+<a name="vm"></a>
+## Virtual Machine
+The Drone Surveillance Protocol can be tested by downloading the following Virtual Machine: https://drive.google.com/drive/folders/1Bn2DktPvI1Lld5TB4LTpbAuCTq_DygGO?usp=sharing. The VM contains all the dependencies pre-installed to execute the case study. This can be done by following the commands from the Setup, and the Example section above. We chose the drone case study for demonstration purposes, but all examples can be executed using the instructions above. Running the case studies in a VM may cause some instability with the simulation. We recommend the user to run the simulations on a local installation of ROS/Gazebo.
