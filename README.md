@@ -22,28 +22,28 @@ The implementation of the software stack, examples of task planners, and interfa
 - Clone this repo `src` directory
     - `git clone git@github.com:Drona-Org/SOTERonROS.git`
 - To run the Drone Surveillance Sample run the following commands:
-    - New terminal window: 
+    - Launch roscore in a new terminal window: 
     ```
         roscore
     ```
-    - New terminal window
+    - Launch the simulator in a new terminal window:
     ``` 
         cd ~/catkin_ws
         catkin_make
         . devel/setup.sh
-        roslaunch multi_robot drone.launch
+        roslaunch multi_robot drone.launch (changes for your specific simulation)
     ```
-    - New terminal window
+    - Compile the P source code in a new terminal window:
     ``` 
         cd ~/catkin_ws/src/SOTERonROS/PSrc/SoftwareStack/
         pc ../Applications/DroneExploration/MainDroneTaskPlanner.p RTAMotionPlanner.p RTAPlanExecutor.p RTADecisionModuleDrone.p Robot.p -outputDir:../Applications/DroneExploration
     ```
-    - New Terminal Window
+    - Execute your application in a new terminal window:
     ``` 
         cd ~/catkin_ws
         catkin_make
         . devel/setup.sh
-        rosrun SOTERonROS soter_test
+        rosrun SOTERonROS soter_test (changes for your specific application)
     ```
 
 <a name="examples"></a>
