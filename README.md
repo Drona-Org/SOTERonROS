@@ -4,7 +4,7 @@ SOTER on ROS is a run-time assurance framework for building safe distributed mob
 
 The framework borrows from the Drona framework and is similarly comprised of three layers. The application layer, the robot software stack, and the robot SDK. The application layer implements an application related task planner that is responsible for computing application related tasks and distributing them amongst the robots for execution. The software stack of each robot consists of an interface to establish the communication with task planner, a motion planner, and a plan executor, in addition to a set of decision modules. The motion planner and the plan executor are implemented as RTA modules that are linked to one of the decision modules and to implementations of their safe and advanced controllers. 
 
-The implementation of the software stack, examples of task planners, and interface of C++ modules can be found in the `PSrc` directory. The `PSrc` directory contains `Applications`, which contains all application specific files, `SoftwareStack`, which contains implementations of the Robot P machine, Motion Planner, Plan Executor, and Decision Modules, and `RobotSDK`, which contains the Cpp modules and foreign function implementations. 
+The implementation of the software stack, examples of task planners, and interface of C++ modules can be found in the `PSrc` directory. The `PSrc` directory contains `Applications`, which contains all application specific files, `SoftwareStack`, which contains implementations of the Robot P machine, Motion Planner, Plan Executor, and Decision Modules, and `RobotSDK`, which contains the C++ modules and foreign function implementations. 
 
 
 ## Table of Contents
