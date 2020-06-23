@@ -31,7 +31,7 @@ The implementation of the software stack, examples of task planners, and interfa
     - Compile the P source code in a new terminal window:
     ``` 
         cd ~/catkin_ws/src/SOTERonROS/PSrc/SoftwareStack/
-        pc ../Applications/<TaskPlanner.p> <Robot.p> <MotionPlanner.p> <PlanExecutor.p>  <Decision Module.p> -outputDir:../application/path
+        pc ../Applications/<TaskPlanner.p> <Robot.p> <MotionPlanner.p> <PlanExecutor.p>  <DecisionModule.p> -outputDir:../application/path
     ```
     - Execute your application in a new terminal window:
     ``` 
