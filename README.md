@@ -14,6 +14,8 @@ The implementation of the software stack, examples of task planners, and interfa
 <a name="Setup"></a>
 ## Setup
 - Install ROS and create a catkin workspace for your ROS packages: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+- Install OMPL for our case studies: https://ompl.kavrakilab.org/installation.html
+- Install the SJTU Drone package for our case study: https://github.com/tahsinkose/sjtu-drone
 - Clone the `multi_robot` ROS package into the `src` directory of your `catkin_ws`. 
     - `cd ~/catkin_ws/src`
     - `git clone git@github.com:sumukhshiv/multi_robot.git`
